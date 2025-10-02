@@ -11,14 +11,14 @@ const App = () => {
 
   return (
     <div className=" text-white">
-      {/* <Navebar /> */}
+      <Navebar />
       <FullScreenNav />
 
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/agence" element={<Agence />} />
         <Route path="/projects" element={<Projects />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 };
