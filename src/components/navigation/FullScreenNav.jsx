@@ -12,22 +12,20 @@ const FullScreenNav = () => {
   const fullScreenNav = useRef(null);
   const [navOpen, setNavOpen] = useContext(NavbarContext);
 
-  useGSAP(() => {
-    const tl = gsap.timeline();
+  const tl = gsap.timeline();
 
+  useGSAP(() => {
     tl.from(".link", {
       opacity: 0,
+      height: 0,
       stagger: {
         amount: 0.25,
       },
     });
-    // tl.pause();
     if (navOpen) {
       fullScreenNav.current.style.display = "block";
-      // tl.play();
     } else {
       fullScreenNav.current.style.display = "none";
-      // tl.reverse();
     }
   }, [navOpen]);
   return (
@@ -46,7 +44,7 @@ const FullScreenNav = () => {
         </div>
       </div>
       <div className="mt-[10vw] overflow-hidden">
-        <div className="link origin-top border-t-[0.1px] relative">
+        <div className="link origin-top border-t-[0.1px] relative overflow-hidden">
           <h1 className="text-[6vw] font-[font2] leading-[0.8] pt-3  uppercase text-center ">
             Projects
           </h1>
@@ -79,7 +77,7 @@ const FullScreenNav = () => {
             </div>
           </div>
         </div>
-        <div className="link origin-top border-t-[0.1px] relative">
+        <div className="link origin-top border-t-[0.1px] relative overflow-hidden">
           <h1 className="text-[6vw] font-[font2] leading-[0.8] pt-3  uppercase text-center ">
             Agency
           </h1>
@@ -112,7 +110,7 @@ const FullScreenNav = () => {
             </div>
           </div>
         </div>
-        <div className="link origin-top border-t-[0.1px] relative">
+        <div className="link origin-top border-t-[0.1px] relative overflow-hidden">
           <h1 className="text-[6vw] font-[font2] leading-[0.8] pt-3  uppercase text-center ">
             Contact
           </h1>
@@ -145,7 +143,7 @@ const FullScreenNav = () => {
             </div>
           </div>
         </div>
-        <div className="link origin-top border-t-[0.1px]  border-b-[0.5px]  relative">
+        <div className="link origin-top border-t-[0.1px]  border-b-[0.5px]  relative overflow-hidden">
           <h1 className="text-[6vw] font-[font2] leading-[0.8] pt-3  uppercase text-center ">
             Blogs
           </h1>
