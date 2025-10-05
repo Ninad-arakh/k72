@@ -68,8 +68,8 @@ const Agence = () => {
               Sixty-<br></br>seventh<br></br> Twelve
             </h1>
           </div>
-          <div className=" pl-[40%] mt-20 ">
-            <h1 className="text-5xl ">
+          <div className=" md:pl-[40%] mt-20 ">
+            <h1 className="md:text-5xl text-3xl px-3">
               {" "}
               &nbsp; &nbsp; &nbsp; &nbsp; Our curiosity fuels our creativity. We
               remain humble and say no to big egos, even yours. A brand is

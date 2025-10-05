@@ -10,7 +10,7 @@ const App = () => {
 
 
   return (
-    <div className=" text-white overflow-x-hidden">
+    <div className=" text- overflow-x-hidden">
       <Navebar />
       <FullScreenNav />
 
