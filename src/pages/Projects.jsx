@@ -10,7 +10,7 @@ const Projects = () => {
   const projectRefs = useRef([]);
   const screen = window.screen.width;
   let isSmallDevice = screen <= 768;
-  console.log("screen : ", isSmallDevice);
+  // console.log("screen : ", isSmallDevice);
 
   // Register ScrollTrigger plugin
   gsap.registerPlugin(ScrollTrigger);
